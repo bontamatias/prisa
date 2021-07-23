@@ -1,0 +1,133 @@
+.splash {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+#blurb {
+  position: absolute;
+  height: 250px;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  font-size: 47px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #232323;
+  text-align: center;
+  transform: translate(-50%, -70%);
+}
+
+#blurb p {
+  display: inline;
+}
+
+#blurb .strikethrough {
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+#blurb .strikethrough:after {
+  content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 4px;
+	margin-top: -0.575em;
+	background: black;
+	transform-origin: center left;
+	animation: strikethrough 1s 0.5s cubic-bezier(.1, 0, .1, 1) 1;
+}
+
+/*@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+    opacity: 1;
+	}
+	to {
+		transform: scaleX(1);
+    opacity: 1;
+	}
+}*/
+
+.bottom {
+  width: 100%;
+  height: 500px;
+  background-color: #FAFAFA;
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.product {
+  z-index: 0;
+  position: relative;
+  height: 500px;
+  width: 850px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+}
+
+.product div {
+  z-index: 3;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background: #EAEAEA;
+  right: 0px;
+}
+
+.product img {
+  z-index: 4;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.product h1 {
+  z-index: 5;
+  position: absolute;
+  font-size: 30px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #FFBC21;
+  text-align: left;
+  white-space: nowrap;
+  top: -10px;
+  left: 0px;
+}
+
+.product h2 {
+  z-index: 5;
+  position: absolute;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #323232;
+  text-align: left;
+  white-space: nowrap;
+  top: -10px;
+  left: 0px;
+}
+
+.product h3 {
+  z-index: 5;
+  position: absolute;
+  font-size: 65px;
+  font-family: 'Major Mono Display', monospace;
+  color: #FFBC21;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -10px;
+  top: -10px;
+  left: 0px;
+}
