@@ -5,6 +5,10 @@
   background-color: #FAFAFA;
 }
 
+#logo {
+	width: 183px;
+}
+
 #blurb {
   position: absolute;
   height: 250px;

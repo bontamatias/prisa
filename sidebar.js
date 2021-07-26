@@ -1,3 +1,4 @@
+/*
 //Handle non-credit-card form fields
 
 const form = document.getElementById('payment-form');
@@ -35,7 +36,7 @@ countryField.classList.add('placeheld');
 countryField.addEventListener('input', (e) => {
   e.currentTarget.classList.remove('placeheld');
 });
-
+*/
 
 
 //sidebar toggle
